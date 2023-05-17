@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversor de unidades de longitud</title>
+	<link rel="stylesheet" type="text/css" href="conversor.css">
+
+</head>
+<body>
+	<h1>Conversor de unidades de longitud</h1>
+	<form>
+		<label>Cantidad de centímetros:</label>
+		<input type="text" id="centimetros"><br>
+
+		<label>Unidad de medida de entrada:</label>
+		<select id="unidad-entrada">
+			<option value="cm">Centímetros</option>
+		</select><br>
+
+		<label>Unidad de medida de salida:</label>
+		<select id="unidad-salida">
+			<option value="m">Metros</option>
+			<option value="mm">Milímetros</option>
+			<option value="pies">Pies</option>
+			<option value="pulgadas">Pulgadas</option>
+			<option value="yardas">Yardas</option>
+			<option value="leguas">Leguas</option>
+		</select><br>
+
+		<input type="button" value="Convertir" onclick="calcular()">
+		<input type="button" value="Limpiar" onclick="limpiar()"><br>
+
+		<label>Resultado:</label>
+		<input type="text" id="resultado" readonly>
+	</form>
+
+	<script src="conversor.js"></script>
+</body>
+</html>
